@@ -30,4 +30,4 @@ def duplicate_encode(word):
 
 # comprehension without list
 def duplicate_encoder(word):
-    return ''.join((')' if word.lower().count(i) > 1 else '(' for i in word.lower()))
+    return ''.join(('(' if word.lower().count(s) == 1 else ')' for s in word.lower()))
